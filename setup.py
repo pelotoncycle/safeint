@@ -43,7 +43,7 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     keywords='int development security',
-    py_modules=['safeint', 'test_safeint'],
+    py_modules=['safeint'],
     install_requires=['six'],
     extras_require={
         'dev': ['check-manifest'],

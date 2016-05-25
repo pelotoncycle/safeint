@@ -3,7 +3,7 @@ Safe Int
 
 Construct integer within a given range to prevent DoS attacks.
 
-Pulling data from the Internet and feeding it to Python's builtin int function exposes you to a potential DOS attack. Python supports arbitrary precision integers.Unlike other languages like C++, Java and even Javascript which will eventually overflow, Python can represent any number you have the memory to store. For instance, in the following code::
+Pulling data from the Internet and feeding it to Python's builtin int function exposes you to a potential DoS attack. Python supports arbitrary precision integers. Unlike other languages like C++, Java or even Javascript which will eventually overflow, Python can represent any number you have the memory to store. For instance, in the following code::
 
     s = '9' * 1000000  # Generate a string with one million 9s
     i = int(s)
@@ -53,6 +53,13 @@ you can just write this::
 
 
     foo = safeint.int(bottle.request.query.foo, low=low, high=high)
+
+
+Development
+-----------
+
+Bug reports and pull requests welcome!
+
 
 Acknowledgments
 ---------------
